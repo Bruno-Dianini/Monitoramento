@@ -1,0 +1,17 @@
+{
+	"ulid": "01GYAPDXS553BW27MXXDN2E8XF",
+	"minTime": 1681826402131,
+	"maxTime": 1681833600000,
+	"stats": {
+		"numSamples": 363534,
+		"numSeries": 884,
+		"numChunks": 3457
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01GYAPDXS553BW27MXXDN2E8XF"
+		]
+	},
+	"version": 1
+}

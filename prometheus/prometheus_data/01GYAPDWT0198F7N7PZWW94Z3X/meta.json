@@ -1,0 +1,17 @@
+{
+	"ulid": "01GYAPDWT0198F7N7PZWW94Z3X",
+	"minTime": 1681821317225,
+	"maxTime": 1681826400000,
+	"stats": {
+		"numSamples": 380600,
+		"numSeries": 874,
+		"numChunks": 2605
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01GYAPDWT0198F7N7PZWW94Z3X"
+		]
+	},
+	"version": 1
+}
