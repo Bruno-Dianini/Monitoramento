@@ -1,18 +1,20 @@
-name: Docker Image CI
+name: Teste de CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-
-  build:
-
+  build-and-test:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      - uses: actions/checkout@v2
+      
+      - name: Build da aplicação
+        run: |
+          docker-compose build
+
+      - name: Rodar os testes
+        run: |
+          docker-compose run app-forum-api mvn test
